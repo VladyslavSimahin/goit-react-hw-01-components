@@ -2,9 +2,9 @@ import { Container, ContainerLi, ContainerSec } from './statistics.styled';
 
 export const Statistics = ({ lists }) => {
   return (
-    <ContainerSec class="statistics">
-      <h2 class="title">Upload stats</h2>
-      <Container class="stat-list">
+    <ContainerSec className="statistics">
+      <h2 className="title">Upload stats</h2>
+      <Container className="stat-list">
         {lists.map(list => (
           <ContainerLi key={list.id}>
             {list.label}
