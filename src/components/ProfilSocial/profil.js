@@ -18,7 +18,12 @@ export const Profil = ({
         tag={tag}
         avatar={avatar}
       />
-      <ProfilList likes={likes} views={views} followers={followers} />
+      <ProfilList
+        likes={likes}
+        views={views}
+        followers={followers}
+        key={username}
+      />
     </Container>
   );
 };
