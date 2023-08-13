@@ -1,9 +1,10 @@
+import PropTypes from 'prop-types';
 import { Container, ContainerLi, ContainerSec } from './statistics.styled';
 
-export const Statistics = ({ lists }) => {
+export const Statistics = ({ lists, title }) => {
   return (
     <ContainerSec className="statistics">
-      <h2 className="title">Upload stats</h2>
+      {title && <h2 className="title">{title}</h2>}
       <Container className="stat-list">
         {lists.map(list => (
           <ContainerLi key={list.id} className="colorLi">
@@ -14,4 +15,7 @@ export const Statistics = ({ lists }) => {
       </Container>
     </ContainerSec>
   );
+};
+Statistics.propTypes = {
+  title: PropTypes.string,
 };
