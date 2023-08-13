@@ -5,6 +5,9 @@ export const FriendCard = styled.li`
   align-items: center;
   gap: 30px;
   padding: 15px;
+  border: 1px solid black;
+  border-radius: 30px;
+  margin-bottom: 15px;
 `;
 
 export const OnlineStatus = styled.span`

@@ -6,7 +6,7 @@ export const Statistics = ({ lists }) => {
       <h2 className="title">Upload stats</h2>
       <Container className="stat-list">
         {lists.map(list => (
-          <ContainerLi key={list.id}>
+          <ContainerLi key={list.id} className="colorLi">
             {list.label}
             <p>{list.percentage} %</p>
           </ContainerLi>

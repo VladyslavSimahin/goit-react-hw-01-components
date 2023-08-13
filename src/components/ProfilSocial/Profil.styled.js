@@ -5,4 +5,9 @@ export const Container = styled.div`
   padding: 10px;
   width: 50px;
   text-align: center;
+  margin: 0 auto;
+`;
+
+export const ContainnerDiv = styled.div`
+  text-align: center;
 `;
