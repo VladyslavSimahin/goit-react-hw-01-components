@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  border-radius: 15px;
   padding: 10px;
   width: 50px;
   text-align: center;
@@ -9,5 +8,8 @@ export const Container = styled.div`
 `;
 
 export const ContainnerDiv = styled.div`
+  margin: 15px auto;
   text-align: center;
+  border: 1px solid black;
+  width: 150px;
 `;
