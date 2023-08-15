@@ -3,7 +3,7 @@ import { Container } from './Profil.styled';
 import { ProfilList } from './profilList';
 import { ProfilSocial } from './profilSocial';
 
-export const Profil = ({
+export const Profile = ({
   username,
   location,
   tag,
@@ -18,16 +18,11 @@ export const Profil = ({
         tag={tag}
         avatar={avatar}
       />
-      <ProfilList
-        likes={likes}
-        views={views}
-        followers={followers}
-        key={username}
-      />
+      <ProfilList likes={likes} views={views} followers={followers} />
     </Container>
   );
 };
-Profil.propTypes = {
+Profile.propTypes = {
   username: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,

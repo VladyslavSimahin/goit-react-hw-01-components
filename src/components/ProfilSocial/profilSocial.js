@@ -1,8 +1,6 @@
 import { ContainnerDiv } from './Profil.styled';
 
-export const ProfilSocial = ({
-  items: { avatar, username, tag, location },
-}) => {
+export const ProfilSocial = ({ avatar, username, tag, location }) => {
   return (
     <ContainnerDiv className="description">
       <img src={avatar} alt={username} className="avatar" width="75" />

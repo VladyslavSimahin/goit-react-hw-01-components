@@ -1,21 +1,20 @@
-export const ProfilList = ({
-  stats: { likes, followers, views },
-  username,
-}) => {
+import { ContainerLii, ContainerUl } from './Profil.styled';
+
+export const ProfilList = ({ likes, followers, views }) => {
   return (
-    <ul className="stats">
-      <li key={username}>
+    <ContainerUl className="stats">
+      <ContainerLii>
         <span className="label">Followers</span>
         <span className="quantity"> {followers}</span>
-      </li>
-      <li key={username}>
+      </ContainerLii>
+      <ContainerLii>
         <span className="label">Views</span>
         <span className="quantity"> {views}</span>
-      </li>
-      <li key={username}>
+      </ContainerLii>
+      <ContainerLii>
         <span className="label">Likes</span>
         <span className="quantity"> {likes}</span>
-      </li>
-    </ul>
+      </ContainerLii>
+    </ContainerUl>
   );
 };
